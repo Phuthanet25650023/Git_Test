@@ -18,6 +18,8 @@ echo "CPE 6211850006";
 #git remote add origin https://github.com/Phuthanet25650023/Git_Test.git
 #git remote -v
 
+#git push origin main
+
 ?>
 <?php echo "Mahanakorn ";?>
 <?php echo "Computer Engineering ";?>
