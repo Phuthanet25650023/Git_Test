@@ -19,7 +19,7 @@ echo "CPE 6211850006";
 #git remote -v
 
 #git push origin main
-
+#git pull origin main
 ?>
 <?php echo "Mahanakorn ";?>
 <?php echo "Computer Engineering ";?>
