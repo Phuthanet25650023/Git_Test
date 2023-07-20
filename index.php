@@ -1,5 +1,7 @@
 <?php
 echo "CPE 6211850006";
+#git init
+
 #git config --global user.name Phuthanet25650023
 #git config --global user.email phuthanet@mut.ac.th
 
