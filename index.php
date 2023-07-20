@@ -23,6 +23,8 @@
 #git checkout main หรือ TEST
 #git checkout -b test สร้าง branch ชื่อ test
 
+#git merge --on-ff master รวม branch
+
 
 ?>
 <?php echo "Computer Engineering ";?>
