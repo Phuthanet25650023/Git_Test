@@ -1,5 +1,5 @@
-<?php
-echo "CPE 6211850006";
+<?phpecho "CPE 6211850006";?>
+<?php echo "Mahanakorn";
 #git init
 
 #git config --global user.name Phuthanet25650023
@@ -19,11 +19,7 @@ echo "CPE 6211850006";
 #git clean -df
 
 #git reset --hard 5015bcdd75fad0170d0ed353c80ae4fc57b911be
-
-
-
 ?>
-<?php echo "Mahanakorn ";?>
 <?php echo "Computer Engineering ";?>
 <?php echo "Computer Engineering01 ";?>
 <?php echo "Computer Engineering02 ";?>
