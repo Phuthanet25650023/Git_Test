@@ -4,24 +4,24 @@ echo "CPE 6211850006";
 
 #git config --global user.name Phuthanet25650023
 #git config --global user.email phuthanet@mut.ac.th
+#git remote add origin https://github.com/Phuthanet25650023/Git_Test.git
+#git pull origin main
 
-#git add index.php 
+#git remote -v
+
 #git status
-
+#git add index.php 
 #git commit -m "index 130766" ข้อความที่ใช้สำหรับเเจ้งการ Update
-#git log
+#git push origin main
 
+#git log
 #git clean -n
 #git clean -df
 
 #git reset --hard 5015bcdd75fad0170d0ed353c80ae4fc57b911be
 
 
-#git remote add origin https://github.com/Phuthanet25650023/Git_Test.git
-#git remote -v
 
-#git push origin main
-#git pull origin main
 ?>
 <?php echo "Mahanakorn ";?>
 <?php echo "Computer Engineering ";?>
