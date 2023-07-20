@@ -8,7 +8,6 @@
 #git pull origin main
 
 #git remote -v
-
 #git status
 #git add index.php 
 #git commit -m "index 130766" ข้อความที่ใช้สำหรับเเจ้งการ Update
