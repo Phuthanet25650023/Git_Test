@@ -18,6 +18,12 @@
 #git clean -df
 
 #git reset --hard 5015bcdd75fad0170d0ed353c80ae4fc57b911be
+
+#git branch TEST สร้าง สาย TEST
+#git checkout main หรือ TEST
+#git checkout -b test สร้าง branch ชื่อ test
+
+
 ?>
 <?php echo "Computer Engineering ";?>
 <?php echo "Computer Engineering01 ";?>
