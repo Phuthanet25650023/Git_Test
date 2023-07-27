@@ -37,3 +37,24 @@ else if (m == 2)
     else for (i = 1; i <= 29; i++)console.log("Day =" + i);
 }
 else for (i = 1; i <= 31; i++)console.log("Day =" + i);
+
+function Gread(score) {
+    try {
+        if (score < 0 || score > 100) return "error";
+        else if (score >= 0 && score <= 40) return "Gread F";
+        else if (score >= 41 && score <= 50) return "Gread D";
+        else if (score >= 51 && score <= 60) return "Gread C";
+        else if (score >= 61 && score <= 70) return "Gread B";
+        else if (score >= 71 && score <= 100) return "Gread A";
+    } catch (error) {
+        console.log(error)
+    }
+}
+Gread(x);
+
+let people = [80,78,50,39,25,59,88,100,85,61];
+
+for(i=0;i<10;i++)
+{
+    console.log("Prople "+i+" : "+Gread(+people[i])+" Score : "+people[i]);
+}
