@@ -4,6 +4,7 @@
 
 #git config --global user.name Phuthanet25650023
 #git config --global user.email phuthanet@mut.ac.th
+#git remote add origin https://github.com/Phuthanet25650023/Git_Test.git
 
 #git add index.php 
 #git commit -m "index 130766" ข้อความที่ใช้สำหรับเเจ้งการ Update
