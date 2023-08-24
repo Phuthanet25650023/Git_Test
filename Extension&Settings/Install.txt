@@ -4,6 +4,7 @@ Prettier
 ESLint
 Code Runner
 node-snippets
+vscode-pdf
 GIT
 ===============================================================================
 Command GIT HUB
