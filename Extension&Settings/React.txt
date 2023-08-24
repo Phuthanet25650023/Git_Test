@@ -1,0 +1,7 @@
+npm create vite@latest hello-react -- --template react-ts
+จากนั้นกด Y Enter
+cd .\hello-react\
+cd .
+
+npm install # ต้องทำการ cd. เข้าไปใน Folder ก่อนถึงจะเข้าได้
+npm run dev
