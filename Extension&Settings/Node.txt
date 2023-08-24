@@ -1,2 +1,4 @@
 npm create vite@latest hello-react -- --template react-ts
 จากนั้นกด Y Enter
+cd .\hello-react\
+cd .
