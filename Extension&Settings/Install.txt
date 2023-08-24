@@ -3,7 +3,7 @@ Install Tools
 Prettier
 ESLint
 Code Runner
-Node JS
+node-snippets
 GIT
 ===============================================================================
 Command GIT HUB
