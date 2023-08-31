@@ -4,6 +4,14 @@
 #git config --global user.email phuthanet@mut.ac.th
 #git remote add origin https://github.com/Phuthanet25650023/Git_Test.git
 
+npm create vite@latest hello-react -- --template react-ts
+cd hello-react
+code .
+
+npm install
+
+npm run dev
+
 #git add index.php 
 #git commit -m "index 130766" ข้อความที่ใช้สำหรับเเจ้งการ Update
 #git push origin main
