@@ -1,5 +1,5 @@
-import * as React from "react";
 import { useState } from "react";
+
 import "./App.css";
 
 function App() {
@@ -7,48 +7,67 @@ function App() {
   const [height, setHeight] = useState(0);
   const [bmi, setBmi] = useState(0);
 
-  const handleOnchange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const [name, value] = event.target;
-    if (name === "weight") setWeight(Number(value));
-    else if (name === "height") setHeight(Number(value));
+  const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
+
+    if (name === "weight") {
+      setWeight(Number(value));
+    } else if (name === "height") {
+      setHeight(Number(value));
+    }
   };
 
   const calculateBmi = () => {
+    // const bmi = weight / ((height / 100) * (height / 100))
+
     const bmi = weight / (height / 100) ** 2;
     setBmi(bmi);
   };
 
   const checkBmiResult = () => {
     if (bmi === 0) return "-";
-    else if (bmi < 18.5) return "ผอม";
-    else if (bmi < 25) return "ดี";
-    else if (bmi < 30) return "อ้วน 1";
-    else if (bmi < 35) return "อ้วน 2";
-    else if (bmi >= 35) return "อ้วน 3";
+    if (bmi < 18.5) return "อยู่ในเกณฑ์น้ำหนักน้อย / ผอม";
+    if (bmi < 25) return "อยู่ในเกณฑ์ปกติ (สุขภาพดี)";
+    if (bmi < 30) return "อยู่ในเกณฑ์ท้วม / โรคอ้วนระดับ 1";
+    if (bmi < 35) return "อยู่ในเกณฑ์อ้วน / โรคอ้วนระดับ 2";
+    if (bmi >= 35) return "อยู่ในเกณฑ์อ้วนมาก / โรคอ้วนระดับ 3";
   };
 
   const getResultClass = () => {
     if (bmi < 18.5) return "gray";
-    else if (bmi < 22.9) return "green";
-    else if (bmi < 24.9) return "yellow";
-    else return "red";
+    if (bmi < 22.9) return "green";
+    if (bmi < 24.9) return "yellow";
+    return "red";
   };
-
   return (
-    <div classname="bmi-app">
-      <h1 classname="title">BMI Calculator</h1>
-      <p classname="subtitle">โปรแกรมคำนวณดัชนีมวลกาย</p>
-      <label htmlFor="weight">น้ำหนัก (Kg)</label>
-      <input type="number" name="weight" onChange={handleOnchange} />
-      <h1></h1>
-      <label htmlFor="weight">ส่วนสูง (cm)</label>
-      <input type="number" name="height" onChange={handleOnchange} />
-      <h1></h1>
+    <div className="bmi-app">
+      <table>
+        <tr>
+          <tb>
+            <h1 className="title">BMI Calculator</h1>
+            <p className="subtitle">โปรแกรมคำนวณค่าดัชนีมวลกาย - BMI</p>
+          </tb>
+        </tr>
+        <tr>
+          <tb>
+            <label htmlFor="weight">น้ำหนัก (kg)</label>
+            <input type="number" name="weight" onChange={handleOnChange} />
+          </tb>
+        </tr>
+        <tr>
+          <tb>
+            <label htmlFor="height">ส่วนสูง (cm)</label>
+            <input type="number" name="height" onChange={handleOnChange} />
+          </tb>
+        </tr>
+      </table>
+
       <button type="button" onClick={calculateBmi}>
         คำนวณ
       </button>
+
       <div className="result">
-        <p>ค่า BMI คือ :{bmi}</p>
+        <p>ค่า BMI คือ: {bmi}</p>
         <p>ผลลัพธ์</p>
         <p className={getResultClass()}>{checkBmiResult()}</p>
       </div>
@@ -56,4 +75,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
