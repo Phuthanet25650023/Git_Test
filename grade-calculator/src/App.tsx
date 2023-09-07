@@ -10,25 +10,27 @@ export default function App() {
   };
 
   const handleClick = () => {
-    // 👇 "message" stores input field value
+    console.log("TEST")
     setUpdated(message);
   };
 
   return (
     <div>
-      <input
-        type="text"
-        id="message"
-        name="message"
-        onChange={handleChange}
-        value={message}
-      />
+      <table>
+        <tr>
+         {/* Stop :  <input mtype="text" id="Stop" name="Stop" onChange={handleChange}  /> */}
+      Start : <input mtype="text" id="Start" name="Start" onChange={handleChange}  /> 
+      Stop :  <input mtype="text" id="Stop" name="Stop" onChange={handleChange}  />
+      <button onClick={handleClick}> Submit </button>
 
       <h2>Message: {message}</h2>
 
       <h2>Updated: {updated}</h2>
+        </tr>
+        </table>
+     
 
-      <button onClick={handleClick}>Update</button>
+     
     </div>
   );
 }
