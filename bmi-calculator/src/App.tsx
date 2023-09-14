@@ -44,22 +44,22 @@ function App() {
     <div className="bmi-app">
       <table>
         <tr>
-          <tb>
+         
             <h1 className="title">BMI Calculator</h1>
             <p className="subtitle">โปรแกรมคำนวณค่าดัชนีมวลกาย - BMI</p>
-          </tb>
+         
         </tr>
         <tr>
-          <tb>
+         
             <label htmlFor="weight">น้ำหนัก (kg)</label>
             <input type="number" name="weight" onChange={handleOnChange} />
-          </tb>
+         
         </tr>
         <tr>
-          <tb>
+         
             <label htmlFor="height">ส่วนสูง (cm)</label>
             <input type="number" name="height" onChange={handleOnChange} />
-          </tb>
+         
         </tr>
       </table>
 
