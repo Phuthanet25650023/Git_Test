@@ -7,6 +7,8 @@ function App() {
   const [height, setHeight] = useState(0);
   const [bmi, setBmi] = useState(0);
 
+ 
+
   const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
 
@@ -40,12 +42,35 @@ function App() {
     if (bmi < 24.9) return "yellow";
     return "red";
   };
+
+const add = (a,b)=> a+b;
+const numbers = [1, 2, 3, 4, 5];
+
+const doubledNumbers = numbers.map(number => number * 2);
+
+const [rating, setRating] = useState(7);
+const [text, setText] = useState("This is an example of a feedback item");
+
+const handleClick = () => {
+  setRating(10);
+  setText("Phuthanet Mekpayom");
+};
+
+const handleClick1 = () => {
+  setRating(7);
+  setText("This is an example of a feedback item");
+};
+
   return (
     <div className="bmi-app">
       <table>
         <tr>
-         
+          <p> {rating} {text} {doubledNumbers} {add(5,10)}</p>
             <h1 className="title">BMI Calculator</h1>
+            <button type="button" onClick={handleClick}>TEST</button>
+            <button type="button" onClick={handleClick1}>TEST2</button>
+
+
             <p className="subtitle">โปรแกรมคำนวณค่าดัชนีมวลกาย - BMI</p>
          
         </tr>
@@ -59,7 +84,8 @@ function App() {
          
             <label htmlFor="height">ส่วนสูง (cm)</label>
             <input type="number" name="height" onChange={handleOnChange} />
-         
+            
+        
         </tr>
       </table>
 

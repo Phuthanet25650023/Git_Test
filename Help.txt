@@ -28,7 +28,7 @@ npm run dev
 
 #git merge --on-ff master รวม branch
 
-==================================== Vercel
+==================================== Vercel ======================================
 
 - npm install
 - npm run dev
