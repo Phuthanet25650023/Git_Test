@@ -7,7 +7,7 @@ function App() {
   const [height, setHeight] = useState(0);
   const [bmi, setBmi] = useState(0);
 
- 
+
 
   const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
