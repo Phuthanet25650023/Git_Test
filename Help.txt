@@ -13,6 +13,7 @@ npm install
 npm run dev
 
 #git add index.php 
+#git add -A
 #git commit -m "index 130766" ข้อความที่ใช้สำหรับเเจ้งการ Update
 #git push origin main
 
