@@ -32,7 +32,7 @@ npm run dev
 #git branch TEST สร้าง สาย TEST
 #git checkout main หรือ TEST
 #git checkout -b test สร้าง branch ชื่อ test
-
+#git diff main
 #git merge --on-ff master รวม branch
 
 ==================================== Vercel ======================================
