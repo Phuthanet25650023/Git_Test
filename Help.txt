@@ -34,3 +34,23 @@ npm run dev
 #git checkout -b test สร้าง branch ชื่อ test
 
 #git merge --on-ff master รวม branch
+
+==================================== Vercel ======================================
+
+- npm install
+- npm run dev
+- npm install vercel
+เปิด bmi-calculator ของเราแล้วไปที่ terminal เพิ่ม npx vercel ถ้าติด error ให้ install
+vercel ในเครื่องเรา ด้วยค าสั่ง npm install vercel ก่อน แล้วใช้ค าสั่ง npx vercel อีกครั้ง
+
+- ครั้งแรกโปรแกรมจะพาไป login vercel ที่หน้าเว็ปอีกครั้งหนึ่ง
+- จากนั้นมันจะถามว่าจะ deploy หรือไม่ ให้ตอบ y แล้วโปรแกรมจะถามว่าไปที่ user เราหรือไม่
+  กด enter ได้เลย
+- Link to existing project? มันจะถามว่าเราจะ link ไปที่โปรเจคที่เรามีบนเว็ปหรือไม่ ให้เราตอบ
+  n เพราะเราไม่ได้สร้างไว้ในเว็ปเลย
+- ต่อมามันจะถามว่าโปรเจคชื่ออะไร ให้ enter ได้เลย
+- โปรแกรมจะถามต่อว่า project อยู่ที่ไหน ให้กด enter ได้เลย (root path)
+- Want to override the settings ตอบ y
+
+- เลือก Build Command
+- หาก deploy ซ่ำ npx vercel --prod
